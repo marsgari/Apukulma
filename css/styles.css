@@ -6,6 +6,8 @@ h2 {
   font-size: 50px;
   font-weight: 600;
   line-height: 65px;
+  height: 71px;
+  margin: 0px 0px 44px 0px;
 }
 
 .section {
@@ -14,24 +16,23 @@ h2 {
   max-width: 1296px;
 }
 
+.how-it-works-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .how-it-works-card {
+  box-sizing: border-box;
   max-width: 416px;
   min-width: 300px;
+  min-height: 320px;
   background-color: #ffffff;
   border-radius: 15px;
-  padding: 26px;
-  margin-left: 12px;
-  margin-right: 12px;
+  padding: 26px 22px 21px 26px;
 }
 
-.how-it-works-title {
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.how-it-works-text {
-  font-size: 18px;
-  line-height: 32px;
+div.how-it-works-card + div.how-it-works-card {
+  margin-left: 24px;
 }
 
 .how-it-works-icon {
@@ -44,7 +45,19 @@ h2 {
   justify-content: center;
 }
 
-.how-it-works-row {
-  display: flex;
-  justify-content: space-between;
+.how-it-works-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 42px;
+  height: 22px;
 }
+
+.how-it-works-text {
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 22px;
+}
+
+
+
+
