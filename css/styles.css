@@ -1,0 +1,50 @@
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 65px;
+}
+
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1296px;
+}
+
+.how-it-works-card {
+  max-width: 416px;
+  min-width: 300px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 26px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.how-it-works-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.how-it-works-text {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.how-it-works-icon {
+  background-color: #1285fd;
+  border-radius: 15px;
+  height: 89px;
+  width: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-it-works-row {
+  display: flex;
+  justify-content: space-between;
+}
