@@ -6,6 +6,7 @@ body {
   --background: #c0c0c0;
   --blue: #1285fd;
   --white: #ffffff;
+  --default-font-size: 18px;
 }
 
 h2 {
@@ -30,13 +31,20 @@ button {
   text-transform: uppercase;
   padding-left: 30px;
   padding-right: 30px;
-  font-size: 18px;
+  font-size: var(--default-font-size);
   font-weight: bold;
 }
 
 span {
-  font-size: 18px;
+  font-size: var(--default-font-size);
   line-height: 32px;
+}
+
+a {
+  font-size: 20px;
+  font-weight: 400;
+  color: initial;
+  text-decoration: initial;
 }
 
 .section {
@@ -45,9 +53,61 @@ span {
   max-width: 1296px;
 }
 
+
+
+.header {
+  height: 38px;
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  min-width: 230px;
+  height: 100%;
+}
+
+.menu {
+  height: 100%;
+  width: 100%;
+  margin-right: 41px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu-item {
+  margin-left: 30px;
+}
+
+.languages {
+  height: 100%;
+  min-width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flag {
+  width: 43px;
+  height: 29px;
+}
+
+
+
+
+
+
+
+
+
+
 .card-row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
