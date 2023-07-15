@@ -2,12 +2,41 @@ body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
+:root {
+  --background: #c0c0c0;
+  --blue: #1285fd;
+  --white: #ffffff;
+}
+
 h2 {
   font-size: 50px;
   font-weight: 600;
   line-height: 65px;
   height: 71px;
-  margin: 0px 0px 44px 0px;
+  margin: 120px 0px 44px 0px;
+}
+
+.figure {
+  width: 100%;
+}
+
+button {
+  background-color: var(--blue);
+  color: var(--white);
+  box-sizing: border-box;
+  border-radius: 15px;
+  border-width: 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+span {
+  font-size: 18px;
+  line-height: 32px;
 }
 
 .section {
@@ -16,18 +45,73 @@ h2 {
   max-width: 1296px;
 }
 
-.how-it-works-row {
+.card-row {
   display: flex;
   justify-content: space-between;
 }
 
-.how-it-works-card {
+.card {
   box-sizing: border-box;
+  background-color: var(--white);
+  border-radius: 15px;
+}
+
+.review-card {
+  max-width: 636px;
+  min-width: 300px;
+  min-height: 266px;
+  padding: 28px 29px 28px 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.review-img {
+  min-height: 96px;
+  min-width: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.review-text {
+  max-width: 446px;
+  margin-left: 39px;
+}
+
+div.review-card + div.review-card {
+  margin-left: 24px;
+}
+
+#add-review-btn {
+  height: 100%;
+}
+
+#reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.how-it-works-card {
   max-width: 416px;
   min-width: 300px;
   min-height: 320px;
-  background-color: #ffffff;
-  border-radius: 15px;
   padding: 26px 22px 21px 26px;
 }
 
@@ -35,8 +119,8 @@ div.how-it-works-card + div.how-it-works-card {
   margin-left: 24px;
 }
 
-.how-it-works-icon {
-  background-color: #1285fd;
+.how-it-works-img {
+  background-color: var(--blue);
   border-radius: 15px;
   height: 89px;
   width: 89px;
@@ -53,11 +137,8 @@ div.how-it-works-card + div.how-it-works-card {
 }
 
 .how-it-works-text {
-  font-size: 18px;
-  line-height: 32px;
   margin-top: 22px;
 }
-
 
 
 

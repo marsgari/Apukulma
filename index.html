@@ -4,19 +4,59 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body style="background-color:#e6e6e6">
+  <body style="background-color: var(--background)">
 
     <div class="section">
-      <h2>Reviews</h2>
+      
+    </div>
+
+    <div class="section">
+      <h2 id="reviews">
+        <div>
+          Reviews
+        </div>
+
+        <button id="add-review-btn">
+          Add review
+        </button>
+      </h2>
+
+      <div class="card-row">
+        <div class="card review-card">
+          <div class="review-img">
+            <img class="figure" src="/images/reviewer1.png" alt="reviewer">
+          </div>
+
+          <div class="basic-text review-text">
+            <span>
+              Очень доволен работой ApuKulma. Помогли найти работу в Microsoft за две недели. Удобный и понятный интерфейс, большой выбор предложений в сфере IT. Я рекомендую этот сайт всем, кто ищет работу или хочет сменить профессию.
+            </span>
+          </div>
+
+        </div>
+  
+        <div class="card review-card">
+          <div class="review-img">
+            <img class="figure" src="/images/reviewer2.png" alt="reviewer">
+          </div>
+
+          <div class="basic-text review-text">
+            <span>
+              ApuKulma стал для меня незаменимым помощником в поиске персонала. Широкий выбор вакансий, а также удобные фильтры и сортировки. Помогли мне сэкономить время и деньги, а также повысить качество подбора персонала.
+            </span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="section">
       <h2>How it works</h2>
-      <div class="how-it-works-row">
+      <div class="card-row">
 
-        <div class="how-it-works-card">
-          <div class="how-it-works-icon">
-            <img class="how-it-works-img" src="/images/register.svg" alt="register">
+        <div class="card how-it-works-card">
+          <div class="how-it-works-img">
+            <img src="/images/register.svg" alt="register">
           </div>
           <div class="how-it-works-title">
             <span>
@@ -33,29 +73,33 @@
           </div>
         </div>
   
-        <div class="how-it-works-card">
-          <div class="how-it-works-icon">
-            <img class="how-it-works-img" src="/images/get_results.svg" alt="results">
+        <div class="card how-it-works-card">
+          <div class="how-it-works-img">
+            <img src="/images/get_results.svg" alt="results">
           </div>
           <div class="how-it-works-title">
             Get results
           </div>
           <div class="how-it-works-text">
-            According to your profile, the site selects suitable 
+            <span>
+              According to your profile, the site selects suitable 
             vacancies or employees by region, salary and much more
+            </span>
           </div>
         </div>
   
-        <div class="how-it-works-card">
-          <div class="how-it-works-icon">
-            <img class="how-it-works-img" src="/images/get_options.svg" alt="Register">
+        <div class="card how-it-works-card">
+          <div class="how-it-works-img">
+            <img src="/images/get_options.svg" alt="Register">
           </div>
           <div class="how-it-works-title">
             Get options
           </div>
           <div class="how-it-works-text">
-            You will receive a detailed list of vacancies / employees 
+            <span>
+              You will receive a detailed list of vacancies / employees 
             and you can send your resume or contact directly
+            </span>
           </div>
         </div>
 
