@@ -19,6 +19,7 @@ h2 {
 
 .figure {
   width: 100%;
+  border-radius: 15px;
 }
 
 button {
@@ -127,15 +128,17 @@ a {
 }
 
 .review-img {
-  min-height: 96px;
-  min-width: 96px;
+  height: 96px;
+  width: 96px;
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: flex-start;
 }
 
-.review-text {
+.review {
+  display: flex;
+  flex-direction: column;
   max-width: 446px;
   margin-left: 39px;
 }
@@ -152,6 +155,10 @@ div.review-card + div.review-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.reviewer-name {
+  margin-top: 10px;
 }
 
 
@@ -181,7 +188,6 @@ div.how-it-works-card + div.how-it-works-card {
 
 .how-it-works-img {
   background-color: var(--blue);
-  border-radius: 15px;
   height: 89px;
   width: 89px;
   display: flex;
