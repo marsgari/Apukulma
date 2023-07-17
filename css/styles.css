@@ -7,11 +7,12 @@ body {
   --blue: #1285fd;
   --white: #ffffff;
   --default-font-size: 18px;
+  --semibold: 600;
 }
 
 h2 {
   font-size: 50px;
-  font-weight: 600;
+  font-weight: var(--semibold);
   line-height: 65px;
   height: 71px;
   margin: 120px 0px 44px 0px;
@@ -36,9 +37,10 @@ button {
   font-weight: bold;
 }
 
-span {
+p {
   font-size: var(--default-font-size);
   line-height: 32px;
+  margin: 0px;
 }
 
 a {
@@ -96,19 +98,14 @@ a {
   height: 29px;
 }
 
-
-
-
-
-
-
-
-
-
 .card-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+div.card-row + div.card-row {
+  margin-top: 30px;
 }
 
 .card {
@@ -116,6 +113,34 @@ a {
   background-color: var(--white);
   border-radius: 15px;
 }
+
+
+
+.category-card-large {
+  max-width: 419px;
+  min-width: 300px;
+  height: 329px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-figure {
+  max-height: 266px;
+  width: 100%;
+}
+
+.category-text {
+  height: 100%;
+  margin-left: 21px; 
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: var(--semibold);
+}
+
+
+
 
 .review-card {
   max-width: 636px;
@@ -197,7 +222,7 @@ div.how-it-works-card + div.how-it-works-card {
 
 .how-it-works-title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: var(--semibold);
   margin-top: 42px;
   height: 22px;
 }
