@@ -266,4 +266,22 @@ div.how-it-works-card + div.how-it-works-card {
 }
 
 
+.footer {
+  box-sizing: border-box;
+  min-height: 214px;
+  background-color: var(--white);
+  margin: -8px;
+  margin-top: 116px;
+}
+
+#footer-top {
+  height: 142px;
+  border-bottom: 2px solid var(--background);
+}
+
+#footer-bottom {
+  margin-top: auto;
+}
+
+
 
