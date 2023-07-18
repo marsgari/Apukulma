@@ -272,17 +272,16 @@ div.how-it-works-card + div.how-it-works-card {
 
 .footer {
   box-sizing: border-box;
-
   background-color: var(--white);
   margin: -8px;
   margin-top: 116px;
 }
 
 #footer-top {
+  box-sizing: border-box;
   min-height: 142px;
   border-bottom: 2px solid var(--background);
-
-
+  padding-top: 30px;
 }
 
 .footer-text {
@@ -297,8 +296,12 @@ div.how-it-works-card + div.how-it-works-card {
   align-items: center;
 }
 
+.footer-column {
+  justify-content: flex-start;
+}
+
 #app-buttons {
-  min-width: 153px;
+  min-width: 423px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -310,6 +313,9 @@ div.how-it-works-card + div.how-it-works-card {
   width: 202.31px;
   height: 67.44px;
   background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 
