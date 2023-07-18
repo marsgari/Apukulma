@@ -5,6 +5,7 @@ body {
 :root {
   --background: #c0c0c0;
   --blue: #1285fd;
+  --dark-blue: #0066d0;
   --white: #ffffff;
   --black: #030303;
   --default-font-size: 18px;
@@ -98,6 +99,54 @@ a {
 .flag {
   width: 43px;
   height: 29px;
+}
+
+#left {
+  max-width: 701px;
+}
+
+#motto1 {
+  height: 64px;
+  width: 400px;
+  background-color: var(--blue);
+  color: var(--dark-blue);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#motto2 {
+  width: 100%;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 65px;
+}
+
+#motto3 {
+  width: 683px;
+  height: 92px;
+  width: 700px;
+}
+
+.highlighted {
+  color: var(--dark-blue)
+}
+
+.main-btn {
+  height: 71.84px;
+}
+
+#home {
+  margin-top: 32px;
+}
+
+#home-img {
+  width: 586px;
+  min-height: 663px;
 }
 
 .card-row {
