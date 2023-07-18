@@ -6,6 +6,7 @@ body {
   --background: #c0c0c0;
   --blue: #1285fd;
   --white: #ffffff;
+  --black: #030303;
   --default-font-size: 18px;
   --semibold: 700;
   --medium: 600;
@@ -136,6 +137,10 @@ div.card-row + div.card-row {
   align-items: center;
 }
 
+.category-card-small + .category-card-small {
+  margin-top: 14px;
+}
+
 .category-img {
   max-height: 266px;
   width: 100%;
@@ -169,7 +174,6 @@ div.card-row + div.card-row {
 .column {
   display: flex;
   flex-direction: column;
-  height: 511px;
   justify-content: space-between;
 }
 
@@ -268,20 +272,47 @@ div.how-it-works-card + div.how-it-works-card {
 
 .footer {
   box-sizing: border-box;
-  min-height: 214px;
+
   background-color: var(--white);
   margin: -8px;
   margin-top: 116px;
 }
 
 #footer-top {
-  height: 142px;
+  min-height: 142px;
   border-bottom: 2px solid var(--background);
+
+
 }
 
-#footer-bottom {
-  margin-top: auto;
+.footer-text {
+  font-size: 19px;
+  font-weight: var(--medium);
 }
+
+.footer-row {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#app-buttons {
+  min-width: 153px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app-button {
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 202.31px;
+  height: 67.44px;
+  background-color: var(--black);
+}
+
+
 
 
 
