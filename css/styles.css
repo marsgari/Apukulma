@@ -5,6 +5,7 @@ body {
 :root {
   --background: #c0c0c0;
   --blue: #1285fd;
+  --lightblue: rgba(18, 133, 253, 0.1);
   --dark-blue: #0066d0;
   --white: #ffffff;
   --black: #030303;
@@ -103,12 +104,20 @@ a {
 
 #left {
   max-width: 701px;
+  margin-top: 129px;
+  justify-content: flex-start;
+}
+
+#right {
+  width: 624px;
+  margin-right: -38px;
+  position: relative;
 }
 
 #motto1 {
   height: 64px;
   width: 400px;
-  background-color: var(--blue);
+  background-color: var(--lightblue);
   color: var(--dark-blue);
   border-radius: 15px;
   display: flex;
@@ -124,20 +133,43 @@ a {
   font-size: 48px;
   font-weight: bold;
   line-height: 65px;
+  margin-top: 23px;
 }
 
 #motto3 {
   width: 683px;
   height: 92px;
   width: 700px;
+  margin-top: 29px;
 }
 
 .highlighted {
-  color: var(--dark-blue)
+  color: var(--dark-blue);
+}
+
+#main-btns {
+  justify-content: flex-start;
+  margin-top: 33.58px;
 }
 
 .main-btn {
   height: 71.84px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn-img {
+  width: 31.93px;
+  height: 31.93px;
+  margin-left: 5px;
+}
+
+#specialist-btn {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border: 3px solid var(--dark-blue);
+  margin-left: 16px;
 }
 
 #home {
@@ -147,6 +179,20 @@ a {
 #home-img {
   width: 586px;
   min-height: 663px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#rectangle {
+  width: 538.64px;
+  min-height: 538.64px;
+  background-color: var(--blue);
+  border-radius: 30px;
+  position: absolute;
+  bottom: -38px;
+  right: 0px;
+  opacity: 0.15;
 }
 
 .card-row {
