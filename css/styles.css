@@ -41,6 +41,7 @@ button {
   padding-right: 30px;
   font-size: var(--default-font-size);
   font-weight: bold;
+  cursor: pointer;
 }
 
 p {
@@ -335,6 +336,7 @@ div.review-card + div.review-card {
   align-items: center;
   position: absolute;
   top: calc(50% - 27.5px);
+  padding: 0px;
 }
 
 .arrow-img {
@@ -372,7 +374,7 @@ div.review-card + div.review-card {
 
 .how-it-works-card {
   max-width: 416px;
-  min-width: 300px;
+  min-width: 416px;
   min-height: 320px;
   padding: 26px 22px 21px 26px;
 }
