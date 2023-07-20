@@ -4,7 +4,9 @@ body {
 
 :root {
   --background: #c0c0c0;
+  --background: rgba(192, 192, 192, 0.4);
   --blue: #1285fd;
+  --blue: #0156af;
   --lightblue: rgba(18, 133, 253, 0.1);
   --dark-blue: #0066d0;
   --white: #ffffff;
@@ -118,7 +120,7 @@ a {
   height: 64px;
   width: 400px;
   background-color: var(--lightblue);
-  color: var(--dark-blue);
+  color: var(--blue);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -144,7 +146,7 @@ a {
 }
 
 .highlighted {
-  color: var(--dark-blue);
+  color: var(--blue);
 }
 
 #main-btns {
