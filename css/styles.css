@@ -197,6 +197,12 @@ a {
   opacity: 0.15;
 }
 
+#app-btns {
+  position: absolute;
+  left: 0px;
+  bottom: -38px;
+}
+
 .card-row {
   display: flex;
   justify-content: space-between;
@@ -397,8 +403,8 @@ div.how-it-works-card + div.how-it-works-card {
   justify-content: flex-start;
 }
 
-#app-buttons {
-  min-width: 423px;
+.app-buttons {
+  width: 423px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
