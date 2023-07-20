@@ -327,6 +327,35 @@ div.review-card + div.review-card {
   margin-top: 10px;
 }
 
+.arrow-btn{
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: calc(50% - 27.5px);
+}
+
+.arrow-img {
+  width: 32.21px;
+  height: 32.21px;
+}
+
+#review-row {
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+#right-btn {
+  right: -70px;
+}
+
+#left-btn {
+  left: -70px;
+}
+
 
 
 
