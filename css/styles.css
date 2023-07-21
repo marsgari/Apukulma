@@ -444,9 +444,7 @@ div.how-it-works-card + div.how-it-works-card {
 .app-button {
   box-sizing: border-box;
   border-radius: 15px;
-  width: 202.31px;
-  height: 67.44px;
-  background-color: var(--black);
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: space-around;
