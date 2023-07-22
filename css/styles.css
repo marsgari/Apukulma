@@ -3,12 +3,12 @@ body {
 }
 
 :root {
-  --background: #c0c0c0;
   --background: rgba(192, 192, 192, 0.4);
+  --grey: #d8d8d8;
+  --lightblue: rgba(18, 133, 253, 0.1);
   --blue: #1285fd;
   --blue: #0156af;
-  --lightblue: rgba(18, 133, 253, 0.1);
-  --dark-blue: #0066d0;
+  --darkblue: #00438a;
   --white: #ffffff;
   --black: #030303;
   --default-font-size: 18px;
@@ -21,7 +21,7 @@ h2 {
   font-weight: var(--semibold);
   line-height: 65px;
   height: 71px;
-  margin: 120px 0px 44px 0px;
+  margin: 0px 0px 44px 0px;
 }
 
 .figure {
@@ -44,6 +44,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: var(--darkblue);
+}
+
 p {
   font-size: var(--default-font-size);
   line-height: 32px;
@@ -57,15 +61,18 @@ a {
   text-decoration: initial;
 }
 
+a:hover {
+  background-color: var(--grey);
+}
+
 .section {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 120px;
   max-width: 1296px;
 }
 
-
-
-.header {
+#menu {
   height: 38px;
   margin-top: 33px;
   display: flex;
@@ -73,15 +80,19 @@ a {
   align-items: center;
 }
 
-.logo {
+#logo {
   min-width: 230px;
   height: 100%;
+}
+
+#logo:hover {
+  background-color: unset;
 }
 
 .menu {
   height: 100%;
   width: 100%;
-  margin-right: 41px;
+  margin-right: 26px;
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -89,7 +100,12 @@ a {
 }
 
 .menu-item {
-  margin-left: 30px;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .languages {
@@ -103,6 +119,10 @@ a {
 .flag {
   width: 43px;
   height: 29px;
+}
+
+#about {
+  margin-top: 32px;
 }
 
 #left {
@@ -141,7 +161,6 @@ a {
 
 #motto3 {
   width: 683px;
-  height: 92px;
   width: 700px;
   margin-top: 29px;
 }
@@ -170,9 +189,13 @@ a {
 
 #specialist-btn {
   background-color: var(--white);
-  color: var(--dark-blue);
-  border: 3px solid var(--dark-blue);
+  color: var(--blue);
+  border: 3px solid var(--blue);
   margin-left: 16px;
+}
+
+#specialist-btn:hover {
+  background-color: var(--grey);
 }
 
 #home {
