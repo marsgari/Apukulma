@@ -3,7 +3,7 @@ body {
 }
 
 :root {
-  --background: rgba(192, 192, 192, 0.4);
+  --background: #e6e6e6;
   --grey: #d8d8d8;
   --lightblue: rgba(18, 133, 253, 0.1);
   --blue: #1285fd;
@@ -32,10 +32,11 @@ h3 {
   margin-bottom: 22px;
 }
 
+
 .figure {
-  width: 100%;
   border-radius: 15px;
 }
+
 
 button {
   background-color: var(--blue);
@@ -67,6 +68,9 @@ a {
   font-weight: 400;
   color: initial;
   text-decoration: initial;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
 }
 
 a:hover {
@@ -86,55 +90,52 @@ hr {
   margin-right: auto;
   margin-top: 120px;
   max-width: 1296px;
+  box-sizing: border-box;
 }
 
-#menu {
-  height: 38px;
-  margin-top: 33px;
+.nav {
+  height: 91px;
+  margin-top: 0px;
+  padding-top: 33px;
+  padding-bottom: 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  align-items: center;  
 
-#logo {
-  min-width: 230px;
-  height: 100%;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10000;
+  background-color: var(--background);
 }
 
 #logo:hover {
   background-color: unset;
 }
 
-.menu {
-  height: 100%;
-  width: 100%;
+#logo-img {
+  width: 230px;
+}
+
+#navbar {
   margin-right: 26px;
   margin-left: auto;
-  display: flex;
-  align-items: center;
   justify-content: flex-end;
+  column-gap: 0px;
 }
 
-.menu-item {
-  height: 100%;
+.nav-item {
   padding-left: 15px;
   padding-right: 15px;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
+  line-height: 38px;
 }
 
-.languages {
-  height: 100%;
-  min-width: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#languages {
+  column-gap: 14px;
 }
 
 .flag {
   width: 43px;
-  height: 29px;
+  border-radius: 7px;
 }
 
 
@@ -263,6 +264,9 @@ hr {
 }
 
 
+#categories {
+  margin-top: 158px;
+}
 
 .category-large {
   max-width: 419px;
@@ -419,7 +423,6 @@ hr {
   font-size: 19px;
   font-weight: var(--medium);
   line-height: 32px;
-  border-radius: 5px;
   padding: 0px 5px 0px 5px;
 }
 
