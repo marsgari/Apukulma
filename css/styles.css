@@ -20,8 +20,16 @@ h2 {
   font-size: 50px;
   font-weight: var(--semibold);
   line-height: 65px;
-  height: 71px;
+  min-height: 71px;
   margin: 0px 0px 44px 0px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: var(--semibold);
+  margin-top: 42px;
+  height: 22px;
+  margin-bottom: 22px;
 }
 
 .figure {
@@ -129,8 +137,13 @@ hr {
   height: 29px;
 }
 
+
+
+
+
 #about {
   margin-top: 32px;
+  column-gap: 0px;
 }
 
 #left {
@@ -180,6 +193,7 @@ hr {
 #main-btns {
   justify-content: flex-start;
   margin-top: 33.58px;
+  column-gap: 13.54px;
 }
 
 .main-btn {
@@ -199,7 +213,6 @@ hr {
   background-color: var(--white);
   color: var(--blue);
   border: 3px solid var(--blue);
-  margin-left: 16px;
 }
 
 #specialist-btn:hover {
@@ -235,14 +248,12 @@ hr {
   bottom: -38px;
 }
 
-.card-row {
+.row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-div.card-row + div.card-row {
-  margin-top: 30px;
+  column-gap: 24px;
+  row-gap: 30px;
 }
 
 .card {
@@ -253,7 +264,7 @@ div.card-row + div.card-row {
 
 
 
-.category-card-large {
+.category-large {
   max-width: 419px;
   min-width: 300px;
   height: 329px;
@@ -262,7 +273,7 @@ div.card-row + div.card-row {
   flex-direction: column;
 }
 
-.category-card-small {
+.category-small {
   width: 416px;
   min-width: 300px;
   height: 91px;
@@ -270,10 +281,6 @@ div.card-row + div.card-row {
   padding-left: 19px;
   display: flex;
   align-items: center;
-}
-
-.category-card-small + .category-card-small {
-  margin-top: 14px;
 }
 
 .category-img {
@@ -309,20 +316,31 @@ div.card-row + div.card-row {
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+#small-cards {
+  row-gap: 14px;
+  margin-top: 42px;
 }
 
 
 
 
+
+
+#review-row {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  align-items: center;
+}
+
 .review-card {
-  max-width: 636px;
-  min-width: 300px;
-  min-height: 266px;
+  flex: 1;
+  min-width: 450px;
   padding: 28px 29px 28px 26px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  column-gap: 39px;
 }
 
 .review-img {
@@ -334,29 +352,12 @@ div.card-row + div.card-row {
   align-items: flex-start;
 }
 
-.review {
-  display: flex;
-  flex-direction: column;
-  max-width: 446px;
-  margin-left: 39px;
-}
-
-div.review-card + div.review-card {
-  margin-left: 24px;
+.review > * {
+  margin-bottom: 10px;
 }
 
 #add-review-btn {
-  height: 100%;
-}
-
-#reviews {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.reviewer-name {
-  margin-top: 10px;
+  height: 71px;
 }
 
 .arrow-btn{
@@ -366,19 +367,12 @@ div.review-card + div.review-card {
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  top: calc(50% - 27.5px);
   padding: 0px;
 }
 
 .arrow-img {
   width: 32.21px;
   height: 32.21px;
-}
-
-#review-row {
-  position: relative;
-  left: 0px;
-  top: 0px;
 }
 
 #right-btn {
@@ -393,26 +387,12 @@ div.review-card + div.review-card {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .how-it-works-card {
-  max-width: 416px;
-  min-width: 416px;
-  min-height: 320px;
+  flex: 1;
+  min-width: 300px;
   padding: 26px 22px 21px 26px;
 }
 
-div.how-it-works-card + div.how-it-works-card {
-  margin-left: 24px;
-}
 
 .how-it-works-img {
   background-color: var(--blue);
@@ -422,18 +402,6 @@ div.how-it-works-card + div.how-it-works-card {
   align-items: center;
   justify-content: center;
 }
-
-.how-it-works-title {
-  font-size: 28px;
-  font-weight: var(--semibold);
-  margin-top: 42px;
-  height: 22px;
-}
-
-.how-it-works-text {
-  margin-top: 22px;
-}
-
 
 .footer {
   background-color: var(--white);
@@ -460,10 +428,6 @@ div.how-it-works-card + div.how-it-works-card {
   align-items: center;
 }
 
-.footer-column {
-  justify-content: flex-start;
-}
-
 .app-buttons {
   width: 423px;
   display: flex;
@@ -478,6 +442,11 @@ div.how-it-works-card + div.how-it-works-card {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  cursor: pointer;
+}
+
+.app-button:hover {
+  background-color: var(--darkblue);
 }
 
 .footer-subsection {
