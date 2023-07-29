@@ -257,6 +257,12 @@ hr {
   row-gap: 30px;
 }
 
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
 .card {
   box-sizing: border-box;
   background-color: var(--white);
@@ -387,7 +393,17 @@ hr {
   left: -70px;
 }
 
+.how-it-works-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
 
+@media (min-width: 1080px) {
+  .how-it-works-row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 
 
