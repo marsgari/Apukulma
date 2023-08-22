@@ -347,7 +347,6 @@ hr {
 }
 
 .review-card {
-  flex-direction: row;
   padding: 28px 29px 28px 26px;
   column-gap: 39px;
 }
@@ -359,6 +358,7 @@ hr {
   align-items: center;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 10px;
 }
 
 .review > * {
@@ -469,11 +469,6 @@ hr {
 }
 
 
-
-
-
-
-
 @media screen and (min-width: 1296px) {
   .section {
     max-width: 1296px;
@@ -497,4 +492,22 @@ hr {
   .how-it-works-row {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .review-card {
+    flex-direction: row;
+  }
 }
+
+@media screen and (max-width: 1446px) {
+  .hidden-review {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1296px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+

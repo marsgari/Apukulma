@@ -1,0 +1,26 @@
+{
+    "reviews": [
+        {
+            "name": "Mikko Salminen",
+            "date": "23.06.2023",
+            "image": "images/reviews/reviewer1.png",
+            "review": "I used Apukulma as a valuable tool to find personnel for my Cabinet of Ministers. The platform offered an extensive pool of candidates from across Finland, coupled with convenient filters and sorting options, which significantly enhanced the efficiency of the recruitment process, saving time and elevating the overall quality of candidates"
+        },
+
+        {
+            "name": "Emilia Wihman",
+            "date": "13.02.2023",
+            "image": "images/reviews/reviewer2.jpg",
+            "review": "Thanks to Apukulma, our child's birthday was a huge success! Apukulma's user-friendly platform helped us find a fantastic animator who turned the party into pure magic. The chosen animator's captivating performance kept kids and parents alike engaged and enthralled. If you want to create unforgettable memories, Apukulma is the way to go!"
+        },
+
+        {
+            "name": "Antti Koskela",
+            "date": "01.01.2023",
+            "image": "images/reviews/reviewer3.png",
+            "review": "Apukulma is an outstanding platform! I used it to find a vet for my dog, and the experience was exceptional. The user-friendly interface, clear vet profiles, and smooth booking process made it effortless to find a perfect doctor for my dog. Highly recommended!"
+        }
+    ]
+}
+
+
