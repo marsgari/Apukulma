@@ -3,9 +3,9 @@ html {
   text-size-adjust: none;
 }
 
-
 body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: var(--background);
 }
 
 :root {
@@ -95,8 +95,14 @@ hr {
   margin-left: auto;
   margin-right: auto;
   margin-top: 120px;
-  max-width: 1296px;
+  max-width: 586px;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 1296px) {
+  .section {
+    max-width: 1296px;
+  }
 }
 
 .nav {
@@ -154,7 +160,6 @@ hr {
 }
 
 #left {
-  max-width: 701px;
   margin-top: 129px;
   justify-content: flex-start;
 }
@@ -167,7 +172,6 @@ hr {
 
 #motto1 {
   height: 64px;
-  width: 400px;
   background-color: var(--lightblue);
   color: var(--blue);
   border-radius: 15px;
@@ -180,7 +184,6 @@ hr {
 }
 
 #motto2 {
-  width: 100%;
   font-size: 48px;
   font-weight: bold;
   line-height: 65px;
@@ -188,8 +191,6 @@ hr {
 }
 
 #motto3 {
-  width: 683px;
-  width: 700px;
   margin-top: 29px;
 }
 
@@ -198,15 +199,29 @@ hr {
 }
 
 #main-btns {
-  justify-content: flex-start;
   margin-top: 33.58px;
-  column-gap: 13.54px;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@media screen and (min-width: 1296px) {
+  #main-btns {
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 13.54px;
+  }
 }
 
 .main-btn {
   height: 71.84px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.center-vertically {
+  display: flex;
   align-items: center;
 }
 
@@ -231,8 +246,7 @@ hr {
 }
 
 #home-img {
-  width: 586px;
-  min-height: 663px;
+  max-width: 586px;
   position: relative;
   top: 0;
   left: 0;
@@ -400,7 +414,7 @@ hr {
   gap: 24px;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1296px) {
   .how-it-works-row {
     grid-template-columns: 1fr 1fr 1fr;
   }
