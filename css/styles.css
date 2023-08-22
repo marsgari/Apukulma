@@ -99,19 +99,21 @@ hr {
   box-sizing: border-box;
 }
 
-.nav {
+.nav-section {
+  background-color: var(--background);
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  top: 0px;
+  left: 0px;
   height: 91px;
+}
+
+.nav {
   margin-top: 0px;
-  padding-top: 33px;
-  padding-bottom: 20px;
   display: flex;
   align-items: center;  
-
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 10000;
-  background-color: var(--background);
+  height: 100%;
 }
 
 #logo:hover {
