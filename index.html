@@ -12,33 +12,52 @@
   </head>
   <body>
 
-    <div class="nav-section">
-
-      <div class="nav section">
-        <a id="logo" href="">
+    <header>
+      <div class="align-center">
+        <a class="logo" href="">
           <img id="logo-img" src="./images/header/logo.svg" alt="apukulma">
         </a>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
           
-        <div id="navbar" class="row">
-          <a class="nav-item" href="#">Home</a>
-          <a class="nav-item" href="#about">About us</a>
-          <a class="nav-item" href="#categories">Categories</a>
-          <a class="nav-item" href="#reviews">Reviews</a>
-          <a class="nav-item" href="#how-it-works">How it works</a>
-        </div>
-
-        <div id="languages" class="row">
-          <a href="javascript:null">
-            <img class="flag" src="./images/header/flag_fi.svg" alt="FI">
-          </a>
-          
-          <a href="javascript:null">
-            <img class="flag" src="./images/header/flag_uk.svg" alt="EN">
-          </a>
-        </div>
+        <nav>
+          <ul>
+            <li><a class="nav-item" href="#">Home</a></li>
+            <li><a class="nav-item" href="#about">About us</a></li>
+            <li><a class="nav-item" href="#categories">Categories</a></li>
+            <li><a class="nav-item" href="#reviews">Reviews</a></li>
+            <li><a class="nav-item" href="#how-it-works">How it works</a></li>
+            <li id="flags">
+              <div class="languages">
+                <a href="javascript:null">
+                  <img class="flag" src="./images/header/flag_fi.svg" alt="FI">
+                </a>
+                
+                <a href="javascript:null">
+                  <img class="flag" src="./images/header/flag_uk.svg" alt="EN">
+                </a>
+              </div>
+            </li>
+          </ul> 
+        </nav>
+  
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
       </div>
+      
 
-    </div>
+      <!--div id="languages" class="row">
+        <a href="javascript:null">
+          <img class="flag" src="./images/header/flag_fi.svg" alt="FI">
+        </a>
+        
+        <a href="javascript:null">
+          <img class="flag" src="./images/header/flag_uk.svg" alt="EN">
+        </a>
+      </div-->
+      
+    </header>
 
     <div id="about" class="section row">
 
@@ -59,7 +78,7 @@
           Ready to provide a service?
           <span style="font-weight: var(--semibold);">Register as a specialist!</span>
         </p>
-        <div id="main-btns" class="row">
+        <div class="row main-btns">
           <button class="main-btn">
             <div class="center-vertically">
               Find a specialist
@@ -75,7 +94,7 @@
         </div>
       </div>
       <div id="right" class="column">
-        <div id="rectangle"></div>
+        <div id="rectangle" class="hidden-mobile"></div>
         <img id="home-img" class="category-img" src="./images/home/home.png" alt="category 1">
         <div class="app-buttons" id="app-btns">
           <img class="app-button" src="./images/footer/android2.svg" alt="options">
