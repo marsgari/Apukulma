@@ -336,6 +336,7 @@ nav li {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  filter: drop-shadow(0 0 10px #0003);
 }
 
 .category-row {
@@ -416,6 +417,7 @@ nav li {
 .review-card {
   padding: 28px 29px 28px 26px;
   column-gap: 39px;
+  filter: none;
 }
 
 .review-img {
@@ -609,4 +611,69 @@ nav li {
     display: none;
   }
 }
+
+
+
+
+
+
+.carousel {
+  position: relative;
+  height: 500px;
+}
+
+.carousel__track-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/*
+.carousel__button {
+  position: absolute;
+  top: 50%;
+}
+*/
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 12px;
+  padding: 0;
+}
+
+
+.carousel__indicator:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+.carousel__indicator.current-slide {
+  background: rgba(0, 0, 0, 0.75);
+}
+
 

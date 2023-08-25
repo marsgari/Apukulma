@@ -271,6 +271,90 @@
       </div>
     </div>
 
+    <div id="reviews" class="section">
+      <div class="row">
+        <h2>Reviews</h2>
+        
+        <button id="add-review-btn">
+          Add review
+        </button>
+      </div>
+      
+      <div class="carousel">
+
+        <button class="arrow-btn hidden-review carousel__button-left" id="left-btn" onclick="previousReview()">
+          <img class="figure  arrow-img" src="./images/reviews/arrow_left.svg" alt="arrow">
+        </button>
+
+        <div class="carousel__track-container">
+          <ul class="carousel__track">
+            <li class="carousel__slide current-slide">
+              <div id="review-1" class="card review-card" number="1">
+                <img class="figure review-img" src="./images/reviews/reviewer1.png" alt="reviewer">
+                <div class="review">
+                  <p>
+                    I used Apukulma as a valuable tool to find personnel for my Cabinet of Ministers. 
+                    The platform offered an extensive pool of candidates from across Finland, 
+                    coupled with convenient filters and sorting options, 
+                    which significantly enhanced the efficiency of the recruitment process, 
+                    saving time and elevating the overall quality of candidates
+                  </p>
+                  <p class="reviewer-name">
+                    <b>Mikko Salminen</b> - 23.06.2023
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="carousel__slide">
+              <div id="review-2" class="card review-card" number="2">
+                <img class="figure review-img" src="./images/reviews/reviewer2.jpg" alt="reviewer">
+                <div class="review">
+                  <p>
+                    Thanks to Apukulma, our child's birthday was a huge success! 
+                    Apukulma's user-friendly platform helped us find a fantastic animator who turned the party into pure magic. 
+                    The chosen animator's captivating performance kept kids and parents alike engaged and enthralled. 
+                    If you want to create unforgettable memories, Apukulma is the way to go!
+                  </p>
+                  <p class="reviewer-name">
+                    <b>Emilia Wihman</b> - 13.02.2023
+                  </p>
+                </div>
+      
+              </div>
+            </li>
+            <li class="carousel__slide">
+              <div id="review-2" class="card review-card" number="2">
+                <img class="figure review-img" src="./images/reviews/reviewer3.png" alt="reviewer">
+                <div class="review">
+                  <p>
+                    Apukulma is an outstanding platform! I used it to find a vet for my dog, 
+                    and the experience was exceptional. The user-friendly interface, clear vet profiles, 
+                    and smooth booking process made it effortless to find a perfect doctor for my dog. 
+                    Highly recommended!
+                  </p>
+                  <p class="reviewer-name">
+                    <b>Antti Koskela</b> - 01.01.2023
+                  </p>
+                </div>
+      
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="carousel__nav">
+          <button class="carousel__indicator current-slide"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+        </div>
+
+        <button class="arrow-btn hidden-review carousel__button-right" id="right-btn" onclick="nextReview()">
+          <img class="figure  arrow-img" src="./images/reviews/arrow_right.svg" alt="arrow">
+        </button>
+
+      </div>
+    </div>
+
     <div id="how-it-works" class="section">
       <h2>How it works</h2>
       <div class="how-it-works-row">
@@ -347,5 +431,6 @@
       </div>
     </div>
       
+  <script src="js/carousel.js"></script>
   </body>
 </html>
