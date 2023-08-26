@@ -13,7 +13,10 @@ carousel.style.height = maxCardHeight + "px";
 cards.forEach(card => card.style.height = maxCardHeight + "px");
 
 
-const setSlidePosition = (slide, index) => slide.style.left = slideWidth * index + "px";
+const setSlidePosition = (slide, index) => {
+    const gap = 20;
+    slide.style.left = (slideWidth + gap) * index + "px"
+};
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
     track.style.transform = "translateX(-" + targetSlide.style.left + ")";
@@ -21,6 +24,7 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
     targetSlide.classList.add("current-slide");
 }
 
+console.log(slides)
 slides.forEach(setSlidePosition);
 
 
