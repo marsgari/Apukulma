@@ -10,7 +10,9 @@ body {
 
 :root {
   --background: #e6e6e6;
-  --grey: #d8d8d8;
+  --lightgrey: #d8d8d8;
+  --grey: rgba(0, 0, 0, 0.3);
+  --darkgrey: rgba(0, 0, 0, 0.75);
   --lightblue: rgba(18, 133, 253, 0.1);
   /*--blue: #1285fd;*/
   --blue: #0156af;
@@ -57,11 +59,18 @@ button {
   font-size: var(--default-font-size);
   font-weight: bold;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button:hover {
   background-color: var(--darkblue);
 }
+
+button:active {
+  box-shadow: 2px 2px 5px var(--darkgrey);
+}
+
+
 
 p {
   font-size: var(--default-font-size);
@@ -81,15 +90,15 @@ a {
 
 
 a:hover {
-  background-color: var(--grey);
+  background-color: var(--lightgrey);
 }
 
 
 hr {
   height: 2px;
   border-width: 0;
-  color: var(--grey);
-  background-color: var(--grey);
+  color: var(--lightgrey);
+  background-color: var(--lightgrey);
   margin: 0px;
 }
 
@@ -291,7 +300,7 @@ nav li {
 }
 
 #specialist-btn:hover {
-  background-color: var(--grey);
+  background-color: var(--lightgrey);
 }
 
 #home {
@@ -661,19 +670,23 @@ nav li {
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--grey);
   margin: 0 12px;
   padding: 0;
 }
 
 
 .carousel__indicator:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--darkgrey);
+}
+
+.carousel__indicator:active {
+  box-shadow: none;
 }
 
 
 .carousel__indicator.current-slide {
-  background: rgba(0, 0, 0, 0.75);
+  background: var(--darkblue);
 }
 
 
