@@ -53,17 +53,3 @@ currentListItem.classList.add("current-slide");
 // Set current nav dot
 const currentNavDot = Array.from(navDots.children)[0];
 currentNavDot.classList.add("current-slide");
-
-console.log(carouselList);
-
-
-
-
-
-
-
-
-
-
-
-

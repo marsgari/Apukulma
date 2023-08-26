@@ -462,11 +462,11 @@ nav li {
   height: 32.21px;
 }
 
-#right-btn {
+.carousel__button-right {
   right: -70px;
 }
 
-#left-btn {
+.carousel__button-left {
   left: -70px;
 }
 
@@ -609,7 +609,7 @@ nav li {
 }
 
 @media screen and (max-width: 1446px) {
-  .hidden-review {
+  button.carousel__button {
     display: none;
   }
 }
@@ -636,6 +636,7 @@ nav li {
   width: 100%;
   position: relative;
   overflow: hidden;
+  filter: drop-shadow(0 0 10px #0003);
 }
 
 .carousel__track {
@@ -652,12 +653,18 @@ nav li {
   width: 100%;
 }
 
-/*
 .carousel__button {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
 }
-*/
+
 
 .carousel__nav {
   display: flex;
