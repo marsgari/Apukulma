@@ -1,55 +1,4 @@
-/*$.getJSON("js/reviews.json", function(data) {
-
-    const carouselList = document.querySelector(".carousel__track");
-    const navDots = document.querySelector(".carousel__nav");
-
-    console.log(navDots)
-
-    const reviews = data.reviews;  
-    reviews.forEach(review => {
-        appendItemToList(review, carouselList);
-        appendNavDot(navDots);
-    });
-
-    // Set current elements
-    const currentListItem = Array.from(carouselList.children)[0];
-    currentListItem.classList.add("current-slide");
-
-    // Set current nav dot
-    const currentNavDot = Array.from(navDots.children)[0];
-    currentNavDot.classList.add("current-slide");
-
-    console.log(navDots)
-});
-*/
-
-fetch("js/reviews.json")
-  .then(response => response.json())
-  .then(data => {
-    console.log(111)
-
-    const carouselList = document.querySelector(".carousel__track");
-    const navDots = document.querySelector(".carousel__nav");
-
-    const reviews = data.reviews;  
-    reviews.forEach(review => {
-        appendItemToList(review, carouselList);
-        appendNavDot(navDots);
-    });
-
-    // Set current elements
-    const currentListItem = Array.from(carouselList.children)[0];
-    currentListItem.classList.add("current-slide");
-
-    // Set current nav dot
-    const currentNavDot = Array.from(navDots.children)[0];
-    currentNavDot.classList.add("current-slide");
-
-    console.log(carouselList)
-
-});
-
-
+import data from './reviews.json' assert { type: 'json' };
 
 const appendItemToList = (reviewData, list) => {
     const li = document.createElement("li");
@@ -87,6 +36,33 @@ const appendNavDot = (list) => {
     button.classList.add("carousel__indicator");
     list.appendChild(button);
 }
+
+const carouselList = document.querySelector(".carousel__track");
+const navDots = document.querySelector(".carousel__nav");
+
+const reviews = data.reviews;  
+reviews.forEach(review => {
+    appendItemToList(review, carouselList);
+    appendNavDot(navDots);
+});
+
+// Set current elements
+const currentListItem = Array.from(carouselList.children)[0];
+currentListItem.classList.add("current-slide");
+
+// Set current nav dot
+const currentNavDot = Array.from(navDots.children)[0];
+currentNavDot.classList.add("current-slide");
+
+console.log(carouselList);
+
+
+
+
+
+
+
+
 
 
 

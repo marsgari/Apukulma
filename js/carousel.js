@@ -8,16 +8,9 @@ const dots = Array.from(navDots.children);
 
 const slideWidth = slides[0]?.getBoundingClientRect().width || 500;
 
-// Set carousel and cards height
-const maxCardHeight = Math.max(...cards.map(card => card.getBoundingClientRect().height));
-const carousel = document.querySelector(".carousel");
-carousel.style.height = maxCardHeight + "px";
-cards.forEach(card => card.style.height = maxCardHeight + "px");
-
-
 const setSlidePosition = (slide, index) => {
     const gap = 20;
-    slide.style.left = (slideWidth + gap) * index + "px"
+    slide.style.left = (slideWidth + gap) * index + "px";
 };
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
@@ -26,9 +19,13 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
     targetSlide.classList.add("current-slide");
 }
 
-console.log(slides)
-slides.forEach(setSlidePosition);
+// Set carousel and cards height
+const maxCardHeight = Math.max(...cards.map(card => card.getBoundingClientRect().height));
+const carousel = document.querySelector(".carousel");
+carousel.style.height = maxCardHeight + "px";
+cards.forEach(card => card.style.height = maxCardHeight + "px");
 
+slides.forEach(setSlidePosition);
 
 navDots.addEventListener("click", e => {
     const targetDot = e.target.closest("button");
