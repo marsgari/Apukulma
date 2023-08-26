@@ -1,10 +1,12 @@
+console.log(222)
+
 const track = document.querySelector(".carousel__track");
 const slides = Array.from(track.children);
 const cards = slides.map(slide => slide.children[0]);
 const navDots = document.querySelector(".carousel__nav");
 const dots = Array.from(navDots.children);
 
-const slideWidth = slides[0].getBoundingClientRect().width;
+const slideWidth = slides[0]?.getBoundingClientRect().width || 500;
 
 // Set carousel and cards height
 const maxCardHeight = Math.max(...cards.map(card => card.getBoundingClientRect().height));
