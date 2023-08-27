@@ -30,11 +30,11 @@ body {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 35px;
   font-weight: var(--semibold);
-  line-height: 65px;
-  min-height: 71px;
-  margin: 0px 0px 44px 0px;
+  line-height: 45px;
+  min-height: 50px;
+  margin: 0px 0px 30px 0px;
 }
 
 h3 {
@@ -109,15 +109,7 @@ a.anchor {
 section {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 120px;
-  max-width: 586px;
-  box-sizing: border-box;
-}
-
-.section {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 120px;
+  margin-top: 60px;
   max-width: 586px;
   box-sizing: border-box;
 }
@@ -282,9 +274,6 @@ nav a, .nav-toggle:checked ~ hr {
 }
 
 .motto2 {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 65px;
   margin-top: 23px;
 }
 
@@ -379,7 +368,7 @@ nav a, .nav-toggle:checked ~ hr {
 }
 
 #categories {
-  margin-top: 158px;
+  margin-top: 98px;
 }
 
 .category-small {
@@ -519,7 +508,7 @@ nav a, .nav-toggle:checked ~ hr {
 .footer {
   background: var(--footer-background);
   margin: -8px;
-  margin-top: 116px;
+  margin-top: 58px;
 }
 
 #footer-top {
@@ -530,7 +519,6 @@ nav a, .nav-toggle:checked ~ hr {
 
 .footer-text {
   font-size: 19px;
-  /*font-weight: var(--medium);*/
   line-height: 32px;
   padding: 0px 5px 0px 5px;
   color: var(--footer-text-color);
@@ -633,12 +621,16 @@ button.carousel__button {
 
 
 @media screen and (min-width: 1454px) {
-  .section {
-    max-width: 1296px;
-  }
-
   section {
     max-width: 1296px;
+    margin-top: 120px;
+  }
+
+  h2 {
+    font-size: 50px;
+    line-height: 65px;
+    min-height: 71px;
+    margin-bottom: 44px;
   }
 
   .nav-toggle-label {
@@ -722,6 +714,14 @@ button.carousel__button {
 
   .hidden-mobile {
     display: block;
+  }
+
+  #categories {
+    margin-top: 158px;
+  }
+
+  .footer {
+    margin-top: 116px;
   }
 
 }
