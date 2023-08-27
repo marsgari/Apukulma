@@ -106,6 +106,14 @@ a.anchor {
   visibility: hidden;
 }
 
+section {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  max-width: 586px;
+  box-sizing: border-box;
+}
+
 .section {
   margin-left: auto;
   margin-right: auto;
@@ -250,8 +258,6 @@ nav a, .nav-toggle:checked ~ hr {
 }
 
 #right {
-  width: 624px;
-  margin-right: -38px;
   position: relative;
 }
 
@@ -332,7 +338,7 @@ nav a, .nav-toggle:checked ~ hr {
   border-radius: 30px;
   position: absolute;
   bottom: -38px;
-  right: 0px;
+  right: -38px;
   opacity: 0.15;
 }
 
@@ -404,11 +410,6 @@ nav a, .nav-toggle:checked ~ hr {
   align-items: center;
   font-size: 19px;
   font-weight: var(--medium);
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
 }
 
 #small-cards {
@@ -534,10 +535,11 @@ nav a, .nav-toggle:checked ~ hr {
 }
 
 .app-buttons {
-  width: 423px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
 .app-button {
@@ -623,8 +625,12 @@ button.carousel__button {
 
 
 
-@media screen and (min-width: 1296px) {
+@media screen and (min-width: 1454px) {
   .section {
+    max-width: 1296px;
+  }
+
+  section {
     max-width: 1296px;
   }
 
@@ -644,6 +650,7 @@ button.carousel__button {
     all: unset;
     display: flex;
     align-items: center;
+    margin-left: auto;
   }
 
   nav ul {
