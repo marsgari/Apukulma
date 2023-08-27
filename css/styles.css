@@ -97,6 +97,13 @@ hr {
   margin: 0px;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -150px;
+  visibility: hidden;
+}
+
 .section {
   margin-left: auto;
   margin-right: auto;
@@ -212,6 +219,10 @@ nav li {
 .flag {
   width: 43px;
   border-radius: 7px;
+}
+
+.fake-section {
+  height: 104px;
 }
 
 

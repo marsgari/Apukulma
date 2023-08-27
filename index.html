@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <!--script src="js/index.js"></script-->
+    <script src="js/index.js"></script>
   </head>
   <body>
 
@@ -20,11 +20,11 @@
           
         <nav>
           <ul>
-            <li><a class="nav-item" href="#">Home</a></li>
-            <li><a class="nav-item" href="#about">About us</a></li>
-            <li><a class="nav-item" href="#categories">Categories</a></li>
-            <li><a class="nav-item" href="#reviews">Reviews</a></li>
-            <li><a class="nav-item" href="#how-it-works">How it works</a></li>
+            <li><a class="nav-item" href="#" onclick="hideNavBar()">Home</a></li>
+            <li><a class="nav-item" href="#about" onclick="hideNavBar()">About us</a></li>
+            <li><a class="nav-item" href="#categories" onclick="hideNavBar()">Categories</a></li>
+            <li><a class="nav-item" href="#reviews" onclick="hideNavBar()">Reviews</a></li>
+            <li><a class="nav-item" href="#how-it-works" onclick="hideNavBar()">How it works</a></li>
             <li id="flags">
               <div class="languages">
                 <a href="javascript:null">
@@ -47,8 +47,9 @@
       <hr>
       
     </header>
-
-    <div id="about" class="section row">
+    
+    <a class="anchor" id="about"></a>
+    <div id="about2" class="section row">
 
       <div id="left" class="column">
         <div class="card">
@@ -95,9 +96,10 @@
       </div>
 
     </div>
-
-    <div id="categories" class="section">
+ 
+    <div class="section">
       
+      <a class="anchor" id="categories"></a>
       <h2>More than 1000 specialists across Finland</h2>
 
       <div class="category-row">
@@ -217,7 +219,8 @@
 
     </div>
 
-    <div id="reviews" class="section">
+    <div class="section">
+      <a class="anchor" id="reviews"></a>
       <div class="row">
         <h2>Reviews</h2>
         
@@ -245,7 +248,8 @@
       </div>
     </div>
 
-    <div id="how-it-works" class="section">
+    <div class="section">
+      <a class="anchor" id="how-it-works"></a>
       <h2>How it works</h2>
       <div class="how-it-works-row">
 
