@@ -40,7 +40,7 @@ h2 {
 h3 {
   font-size: 28px;
   font-weight: var(--semibold);
-  margin-top: 42px;
+  margin-top: 0;
   height: 22px;
   margin-bottom: 22px;
 }
@@ -485,7 +485,9 @@ nav a, .nav-toggle:checked ~ hr {
 }
 
 .how-it-works-card {
-  padding: 26px 22px 21px 26px;
+  padding: 22px;
+  flex-direction: row;
+  column-gap: 22px;
 }
 
 
@@ -500,6 +502,7 @@ nav a, .nav-toggle:checked ~ hr {
 
 .how-it-works-text {
   font-size: var(--default-font-size);
+  line-height: 24px;
 }
 
 
@@ -730,6 +733,18 @@ button.carousel__button {
 
   #small-cards {
     row-gap: 14px;
+  }
+
+  .how-it-works-card {
+    flex-direction: column;
+  }
+
+  h3 {
+    margin-top: 42px;
+  }
+
+  .how-it-works-text {
+    line-height: 32px;
   }
 
 }
