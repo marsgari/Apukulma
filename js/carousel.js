@@ -7,7 +7,7 @@ const navDots = document.querySelector(".carousel__nav");
 const dots = Array.from(navDots.children);
 const columnGap = Number(
     getComputedStyle(document.documentElement)
-    .getPropertyValue('--reviewColumnGap')
+    .getPropertyValue('--review-column-gap')
     .slice(0, -2)
 );
 
