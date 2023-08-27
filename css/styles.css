@@ -234,6 +234,7 @@ nav a, .nav-toggle:checked ~ hr {
 
 .nav-item {
   line-height: 38px;
+  padding: 0 20px;
 }
 
 .languages {
@@ -659,7 +660,7 @@ button.carousel__button {
   }
 
   nav li {
-    margin: 0 0 0 40px;
+    margin: 0;
     border-radius: 10px;
   }
 
