@@ -25,6 +25,8 @@ body {
   --medium: 600;
   --review-column-gap: 24px;
   --shadow: drop-shadow(0 0 10px #0005);
+  --nav-items-appear: opacity 250ms ease-in-out 250ms;
+  --nav-items-disappear: opacity 150ms ease-in-out;
 }
 
 h2 {
@@ -169,7 +171,9 @@ nav {
   left: 0;
   background: var(--background);
   width: 100%;
-  display: none;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
 }
 
 nav ul {
@@ -184,8 +188,22 @@ nav li {
   margin-left: 1em;
 }
 
+nav a, .nav-toggle:checked ~ hr {
+  opacity: 0;
+  transition: var(--nav-items-disappear);
+}
+
 .nav-toggle:checked ~ nav{
-  display: block;
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a, hr {
+  opacity: 1;
+  transition: var(--nav-items-appear);
+}
+
+.header__line {
+  display: none;
 }
 
 .logo {
@@ -220,11 +238,6 @@ nav li {
   width: 43px;
   border-radius: 7px;
 }
-
-.fake-section {
-  height: 104px;
-}
-
 
 #about {
   margin-top: 0;
@@ -641,6 +654,14 @@ button.carousel__button {
   nav li {
     margin: 0 0 0 40px;
     border-radius: 10px;
+  }
+
+  nav a {
+    opacity: 1;
+  }
+
+  .header__line {
+    display: block;
   }
 
   .main-btns {
