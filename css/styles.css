@@ -541,8 +541,6 @@ nav a, .nav-toggle:checked ~ hr {
 }
 
 .app-button {
-  box-sizing: border-box;
-  border-radius: 15px;
   height: 65px;
   display: flex;
   align-items: center;
