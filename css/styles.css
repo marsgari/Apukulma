@@ -566,8 +566,24 @@ nav a, .nav-toggle:checked ~ hr {
   height: 100%;
   width: 100%;
   position: relative;
-  overflow: hidden;
   filter: var(--shadow);
+  overflow-y: hidden;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.carousel__track-container::-webkit-scrollbar {
+  display: none;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline div.card {
+  scroll-snap-align: start;
 }
 
 .carousel__track {
@@ -585,7 +601,7 @@ nav a, .nav-toggle:checked ~ hr {
 }
 
 .carousel__nav {
-  display: flex;
+  display: none;
   justify-content: center;
   padding: 10px 0;
 }
@@ -743,6 +759,14 @@ button.carousel__button {
 
   .how-it-works-text {
     line-height: 32px;
+  }
+
+  .carousel__track-container {
+    overflow-x: hidden;
+  }
+
+  .snaps-inline div.card {
+    scroll-snap-align: none;
   }
 
 }

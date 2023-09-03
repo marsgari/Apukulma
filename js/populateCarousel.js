@@ -6,6 +6,7 @@ const appendItemToList = (reviewData, list) => {
 
     const card = document.createElement("div");
     card.setAttribute("class", "card review-card");
+    card.setAttribute("pointer-events", "none");
 
     // Image
     const img = document.createElement("img");
