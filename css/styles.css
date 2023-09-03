@@ -761,7 +761,7 @@ button.carousel__button {
     line-height: 32px;
   }
 
-  /*
+  
   .carousel__track-container {
     overflow-x: hidden;
   }
@@ -770,7 +770,7 @@ button.carousel__button {
   .snaps-inline div.card {
     scroll-snap-align: none;
   }
-  */
+  
 
 }
 

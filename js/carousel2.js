@@ -31,25 +31,17 @@ const setSlidePosition = (slide, index) => {
     slide.style.width = slideWidth + "px";
 };
 
-const moveToSlide = (track, currentSlide, targetSlide) => {
-    const position = - Number(targetSlide.style.left.slice(0, -2));
-    track.style.transform = "translateX(" + position + "px)";
-    //currentSlide.classList.remove("current-slide");
-    //targetSlide.classList.add("current-slide");
-}
 
-const updateDots = (currentDot, targetDot) => {
-    currentDot.classList.remove("current-slide");
-    targetDot.classList.add("current-slide");
-}
+
 
 const updateSlides = () => {
     slides = Array.from(track.children);
 }
 
 const setHeights = () => {
+    updateSlides();
     const cards = slides.map(slide => slide.children[0]);
-    const heights = cards.map(card => card.getBoundingClientRect().height)
+    cards.forEach(card => card.style.height = null);
     const maxCardHeight = Math.max(...cards.map(card => card.getBoundingClientRect().height));
     const carousel = document.querySelector(".carousel");
     carousel.style.height = maxCardHeight + "px";
@@ -66,11 +58,16 @@ const setCarousel = () => {
     updateSlideWidth();
     slides.forEach(setSlidePosition);
 
+    
     track.style.transform = "translateX(0px)";
+    /*
     const currentSlide = track.querySelector(".current-slide");
     currentSlide.classList.remove("current-slide");
     const firstSlide = slides.filter(slide => slide.style.left === "0px")[0];
     firstSlide.classList.add("current-slide");
+    */
+    
+    
     
 
     // Set carousel and cards height
@@ -78,28 +75,7 @@ const setCarousel = () => {
 }
 
 initializeCarousel();
-updateSlideWidth();
-/*
-position = slideWidth + columnGap;
-track.style.transform = "translateX(-" + position + "px)";
-*/
 
-
-/*
-navDots.addEventListener("click", e => {
-    const targetDot = e.target.closest("button");
-
-    if (! targetDot) return;
-
-    const currentSlide = track.querySelector(".current-slide");
-    const currentDot = navDots.querySelector(".current-slide");
-    const targetIndex = dots.findIndex(dot => dot === targetDot);
-    const targetSlide = slides[targetIndex];
-
-    moveToSlide(track, currentSlide, targetSlide);
-    updateDots(currentDot, targetDot);
-})
-*/
 
 nextButton.addEventListener("click", e => {
     updateSlides();
@@ -149,10 +125,11 @@ window.addEventListener("resize", (event) => {
     const newCarouselContainer = document.querySelector(".carousel__track-container");
     const newContainerWidth = newCarouselContainer.getBoundingClientRect().width;
     if (newContainerWidth !== containerWidth) {
-        console.log(111)
         setCarousel();
     }
 });
+
+/*
 
 const swipeLeft = () => {
     updateSlides();
@@ -199,3 +176,4 @@ track.addEventListener('touchstart', lock);
 track.addEventListener('mouseup', move);
 track.addEventListener('touchend', move);
 
+*/
