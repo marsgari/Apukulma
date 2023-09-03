@@ -1,4 +1,4 @@
-import data from './reviews.json' assert { type: 'json' };
+import reviews from "./reviews.js"
 
 const appendItemToList = (reviewData, list) => {
     const li = document.createElement("li");
@@ -41,7 +41,6 @@ const appendNavDot = (list) => {
 const carouselList = document.querySelector(".carousel__track");
 const navDots = document.querySelector(".carousel__nav");
 
-const reviews = data.reviews;  
 reviews.forEach(review => {
     appendItemToList(review, carouselList);
     appendNavDot(navDots);

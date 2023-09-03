@@ -1,5 +1,4 @@
-{
-    "reviews": [
+const reviews = [
         {
             "name": "Mikko Salminen",
             "date": "23.06.2023",
@@ -27,7 +26,6 @@
             "image": "images/reviews/reviewer4.jpg",
             "review": "I'm absolutely delighted with Apukulma! As a working mother, finding a dependable babysitter for my son was always a challenge, until I discovered Apukulma. The platform's user-friendly interface, detailed babysitter profiles, and easy messaging system made the process a breeze. Now, I have a wonderful babysitter for my son, and I'm incredibly grateful for Apukulma!"
         }
-    ]
-}
+    ];
 
-
+export default reviews;
