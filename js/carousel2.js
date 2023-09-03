@@ -50,7 +50,6 @@ const updateSlides = () => {
 const setHeights = () => {
     const cards = slides.map(slide => slide.children[0]);
     const heights = cards.map(card => card.getBoundingClientRect().height)
-    console.log(heights)
     const maxCardHeight = Math.max(...cards.map(card => card.getBoundingClientRect().height));
     const carousel = document.querySelector(".carousel");
     carousel.style.height = maxCardHeight + "px";
@@ -155,19 +154,48 @@ window.addEventListener("resize", (event) => {
     }
 });
 
+const swipeLeft = () => {
+    updateSlides();
+    const firstSlide = slides[0];
+    const position2 = Number(firstSlide.style.left.slice(0, -2));
+    firstSlide.style.left = position2 + (slideWidth + columnGap) * slides.length + "px";
+    track.appendChild(firstSlide);
+    
+}
+
+const swipeRight = () => {
+    updateSlides();
+      
+    const firstSlide = slides[0];
+    const lastSlide = slides[slides.length-1];
+    const position2 = Number(lastSlide.style.left.slice(0, -2));
+    lastSlide.style.left = position2 - (slideWidth + columnGap) * slides.length + "px";
+    track.insertBefore(lastSlide, firstSlide);
+
+}
+
+
+let touchStart;
 
 function lock(e) {
-    console.log(111)
+    touchStart = e.clientX;
 };
 
 function move(e) {
-    console.log(222)
+    const touchEnd = e.clientX;
+    console.log(touchEnd > touchStart ? "right" : "left")
+
+    if (touchEnd < touchStart) {
+        swipeLeft()
+    } else {
+        swipeRight()
+    }
 };
 
 
-track.addEventListener('mousedown', lock, false);
-track.addEventListener('touchstart', lock, false);
+track.addEventListener('mousedown', lock);
+track.addEventListener('touchstart', lock);
 
-track.addEventListener('mouseup', move, false);
-track.addEventListener('touchend', move, false);
+track.addEventListener('mouseup', move);
+track.addEventListener('touchend', move);
 

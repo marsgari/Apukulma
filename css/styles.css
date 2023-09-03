@@ -761,13 +761,16 @@ button.carousel__button {
     line-height: 32px;
   }
 
+  /*
   .carousel__track-container {
     overflow-x: hidden;
   }
 
+  
   .snaps-inline div.card {
     scroll-snap-align: none;
   }
+  */
 
 }
 
